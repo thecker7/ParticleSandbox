@@ -5,16 +5,16 @@
 <script>
 var accessToken = "c902b937331cd5355e55bbc99929cfc672796a2c";
 var deviceID = "53004c001851373237343331"
-var url = "https://api.particle.io/v1/devices/" + deviceID + "/led";
+var url = "https://api.particle.io/v1/devices/" + deviceID + "/led?access_token=c902b937331cd5355e55bbc99929cfc672796a2c";
 
 function switchOn()
 {
-	$.post(url, {params: "on", access_token: accessToken });
+	$.post(url, {params: "on"});
 }  
 
 function switchOff()
 {
-	$.post(url, {params: "off", access_token: accessToken });
+	$.post(url, {params: "off"});
 }  
 
 </script>
